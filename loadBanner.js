@@ -1,3 +1,7 @@
+import $ from "jquery";
+
+Jquery = $;
+
 jQuery(document).ready(function () {
     // This will make the cookie bar disappear when the accept button is clicked
     jQuery('.gdpr-button-accept').click(function () {
