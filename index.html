@@ -7,17 +7,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="loadBanner.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Please accept the cookies</h1>
-    <script>
-        $(function () {
-            $("#includedContent").load("banner.html");
-        });
-
-    </script>
+    <div id="gdpr-box" class="cookies-accept">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <button class="gdpr-button-accept">Accept cookies</button>
+        <a href="https://google.com" class="gdpr-button-settings">Change settings</a>
+    </div>
 </body>
 
 </html>
