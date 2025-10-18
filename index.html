@@ -9,13 +9,19 @@
 
 <body>
     <button id="cookies">Accept cookies</button>
+    <style>
+        #cookies {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
     <script>
         document.getElementById('cookies').addEventListener('click', function () {
             document.cookie = "firstName=Egirl; expires=Sun, 31 Dec 2024 23:59:59 GMT; path=/;";
             alert('Cookies accepted!');
             console.log(document.cookie);
         });
-        console.log(document.cookie);
     </script>
 </body>
 
