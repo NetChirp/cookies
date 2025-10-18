@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="loadBanner.js" type="module"></script>
-    <script src="./node_modules/jquery/src/jquery.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cookies</title>
 </head>
 
 <body>
-    <div id="gdpr-box" class="cookies-accept">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
-        <button class="gdpr-button-accept">Accept cookies</button>
-        <a href="https://google.com" class="gdpr-button-settings">Change settings</a>
-    </div>
+    <button id="cookies">Accept cookies</button>
+    <script>
+        document.getElementById('cookies').addEventListener('click', function () {
+            document.cookie = "firstName=Egirl; expires=Sun, 31 Dec 2024 23:59:59 GMT; path=/;";
+            alert('Cookies accepted!');
+            console.log(document.cookie);
+        });
+        console.log(document.cookie);
+    </script>
 </body>
 
 </html>
